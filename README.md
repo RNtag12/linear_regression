@@ -16,29 +16,33 @@ Coefficient Interpretation: Understanding how each feature influences the target
 How It Works
 Data Loading and Preprocessing
 The dataset is loaded using Pandas, and we examine its structure and summary statistics to understand its contents.
-python
+```python
 import pandas as pd
 
 df = pd.read_csv('HousePrices.csv')
 print(df.head())
 print(df.info())
+```
 
-Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 Visualizations are created to explore relationships between features and the target variable (Price).
-python
+
+```python
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 sns.pairplot(df)
 sns.displot(df['Price'])
 sns.heatmap(df.corr(), annot=True)
+```
 
-Feature Selection
+## Feature Selection
 We separate the features from the target variable:
-python
+
+```python
 X = df[['Avg. Area Income', 'Avg. Area House Age', 'Avg. Area Number of Rooms', 'Avg. Area Number of Bedrooms', 'Area Population']]
 y = df['Price']
-
+``` 
 Train-Test Split
 The dataset is split into training and testing sets to evaluate model performance:
 python
