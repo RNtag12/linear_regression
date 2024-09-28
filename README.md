@@ -65,29 +65,17 @@ lm.fit(X_train, y_train)
 ## Model Evaluation
 After training the model, we evaluate its performance by examining its coefficients and calculating various regression metrics:
 python
-# Coefficients
-coeff_df = pd.DataFrame(lm.coef_, X.columns, columns=['Coefficient'])
-print(coeff_df)
 
-# Predictions
-predictions = lm.predict(X_test)
+## Steps to Execute the Project
 
-# Evaluation Metrics
-from sklearn import metrics
-
-print('MAE:', metrics.mean_absolute_error(y_test, predictions))
-print('MSE:', metrics.mean_squared_error(y_test, predictions))
-print('RMSE:', np.sqrt(metrics.mean_squared_error(y_test, predictions)))
-
-Steps to Execute the Project
 Clone the repository or download the script.
 Install the required dependencies:
-bash
+```bash
 pip install numpy pandas seaborn matplotlib scikit-learn
-
+```
 Ensure the dataset is in the same directory as the script or provide the correct path to the dataset, then run the script:
-bash
+```bash
 python linear_regression_model.py
-
-Conclusion
+```
+# Conclusion
 By implementing and optimizing a Linear Regression model, this project showcases the importance of data preprocessing and evaluation metrics in machine learning. The evaluation metrics help assess model accuracy effectively. This method can be applied to various datasets to achieve reliable predictions for continuous outcomes such as house prices.
