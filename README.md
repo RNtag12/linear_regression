@@ -18,7 +18,7 @@ This project demonstrates the implementation and optimization of a Linear Regres
 - Coefficient Interpretation: Understanding how each feature influences the target variable.
 
 ## How It Works
-Data Loading and Preprocessing
+### 1. Data Loading and Preprocessing
 The dataset is loaded using Pandas, and we examine its structure and summary statistics to understand its contents.
 ```python
 import pandas as pd
@@ -28,7 +28,7 @@ print(df.head())
 print(df.info())
 ```
 
-### Exploratory Data Analysis (EDA)
+### 2. Exploratory Data Analysis (EDA)
 Visualizations are created to explore relationships between features and the target variable (Price).
 
 ```python
