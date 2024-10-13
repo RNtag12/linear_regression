@@ -17,6 +17,17 @@ This project demonstrates the implementation and optimization of a Linear Regres
 - Model Training and Evaluation: Implementing Linear Regression, training the model, and evaluating its performance using regression metrics.
 - Coefficient Interpretation: Understanding how each feature influences the target variable.
 
+## Steps to Execute the Project
+
+Clone the repository or download the script.
+Install the required dependencies:
+```bash
+pip install numpy pandas seaborn matplotlib scikit-learn
+```
+Ensure the dataset is in the same directory as the script or provide the correct path to the dataset, then run the script:
+```bash
+python linear_regression_model.py
+```
 ## How It Works
 ### 1. Data Loading and Preprocessing
 The dataset is loaded using Pandas, and we examine its structure and summary statistics to understand its contents.
@@ -66,16 +77,5 @@ lm.fit(X_train, y_train)
 After training the model, we evaluate its performance by examining its coefficients and calculating various regression metrics:
 python
 
-## Steps to Execute the Project
-
-Clone the repository or download the script.
-Install the required dependencies:
-```bash
-pip install numpy pandas seaborn matplotlib scikit-learn
-```
-Ensure the dataset is in the same directory as the script or provide the correct path to the dataset, then run the script:
-```bash
-python linear_regression_model.py
-```
 # Conclusion
 By implementing and optimizing a Linear Regression model, this project showcases the importance of data preprocessing and evaluation metrics in machine learning. The evaluation metrics help assess model accuracy effectively. This method can be applied to various datasets to achieve reliable predictions for continuous outcomes such as house prices.
