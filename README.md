@@ -31,49 +31,19 @@ python linear_regression_model.py
 ## How It Works
 ### 1. Data Loading and Preprocessing
 The dataset is loaded using Pandas, and we examine its structure and summary statistics to understand its contents.
-```python
-import pandas as pd
-
-df = pd.read_csv('HousePrices.csv')
-print(df.head())
-print(df.info())
-```
-
 ### 2. Exploratory Data Analysis (EDA)
 Visualizations are created to explore relationships between features and the target variable (Price).
 
-```python
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-sns.pairplot(df)
-sns.displot(df['Price'])
-sns.heatmap(df.corr(), annot=True)
-```
-
 ### 3. Feature Selection
-We separate the features from the target variable:
+We separate the features from the target variable
 
-```python
-X = df[['Avg. Area Income', 'Avg. Area House Age', 'Avg. Area Number of Rooms', 'Avg. Area Number of Bedrooms', 'Area Population']]
-y = df['Price']
-``` 
-### Train-Test Split
+### 4. Train-Test Split
 The dataset is split into training and testing sets to evaluate model performance:
-```python
-from sklearn.model_selection import train_test_split
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=101)
-```
-### Model Training
+### 5. Model Training
 We create a Linear Regression model using Scikit-learn's LinearRegression class and fit it to our training data:
-```python
-from sklearn.linear_model import LinearRegression
 
-lm = LinearRegression()
-lm.fit(X_train, y_train)
-```
-## Model Evaluation
+### 6. Model Evaluation
 After training the model, we evaluate its performance by examining its coefficients and calculating various regression metrics:
 python
 
