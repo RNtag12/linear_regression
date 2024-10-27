@@ -1,7 +1,7 @@
 # Linear_regression
 
 ## Linear Regression Implementation and Optimization
-This project is a simple practice project whcih explains how to implement and optimize a Linear Regression model using Python. The project involves data preprocessing, visualization, model training, and performance evaluation to achieve an optimal model for predicting house prices.
+This project is a simple practice project which explains how to implement and optimize a Linear Regression model using Python. The project involves data preprocessing, visualization, model training, and performance evaluation to achieve an optimal model for predicting house prices.
 
 
 ## General Information
